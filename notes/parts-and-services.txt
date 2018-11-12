@@ -1,0 +1,86 @@
+Compute Services
+---------------------
+EC2 (Elastic Cloud Computing)
+EC2 Containers
+  For Docker containers
+Elastic Beanstalk
+  For developers who basically don't understand AWS, and want to upload their code. Provides micro-services such as: load-balancers, auto-scaling groups, or EC2 instances
+Lambda
+  Code uploaded to the cloud that is executed when an event handler is fired.
+  (take lots of notes on Labmda)
+Lightsail
+  Amazon's VPS (virtual private services)
+  Provisions users with a server
+Batch
+  For batch computing
+
+Storage
+---------------------
+S3 (Simple Storage Service)
+  Object-based storage
+EFS (Elastic File System)
+  Network attached storage
+Glacier
+  For data archival
+Snowball
+  Provides a way to bring in large amounts of data into the AWS data center (think terrabytes on a disk)
+Storage Gateway
+  Virtual machines installed into your data center/head office that replicates information back to your S3
+
+Database
+---------------------
+RDS (Relational Database Service)
+  Like MySQL, PostgresQL
+DynamoDB
+  Non-relational database (i.e. MongoDB)
+Elasticache
+  A way of caching commonly queried things from your DB
+Red Shift
+  Data warehousing or business intelligence for complex queries
+
+Migration
+---------------------
+AWS Migration Hub
+  A tracking service for migrations
+Application Discovery Service
+  Detects applications and dependencies
+Database Migration Service
+  Service to migrate from On Premise to AWS
+Server Migration Service
+Snowball (somewhere between migration and storage)
+
+Networking and Content delivery
+---------------------
+VPC (Virtual Private Cloud)
+  A virtual data center
+Cloudfront
+  Amazon's content delivery network
+Route53
+  DNS Service (IPv4 and IPv6 address)
+API Gateway
+  Create APIs, more to come
+Direct Connect
+  Run a dedicated line from your data center to Amazon
+
+Developer Tools
+---------------------
+CodeStar
+  Project management for code with continuous delivery toolchain
+CodeCommit
+  Place to store your code, source control service for git repositories
+CodeBuild
+  For compiling code
+CodeDeploy
+  Automates deployments to your EC2 instances
+CodePipeline
+  Continous delivery service
+X-Ray
+  For debugging
+Cloud9
+  An IDE (integrated development environment)
+
+
+=====================
+
+Q:
+A:

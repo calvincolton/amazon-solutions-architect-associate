@@ -1,0 +1,8 @@
+Q: What is a region?
+A: A region is a geographical area. Each region consists of 2 or more Availability Zones.
+
+Q: What is an Availability Zone?
+A: An Availability Zone (AZ) is simply a data center.
+
+Q: What is an AWS Edge Location?
+A: Edge locations are endpoints for AWS which are used for caching content. Typically this consists of Amazon Cloudfront, AWS' content delivery network (CDN).
