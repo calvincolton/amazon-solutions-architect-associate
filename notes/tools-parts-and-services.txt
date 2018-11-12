@@ -150,8 +150,102 @@ Data Pipeline *
 Glue
   ETL (extract, transform, load)
 
+Security and Identity Compliance
+---------------------
+IAM
+Cognito
+  Device Authentication Service
+GuardDuty
+  Service that monitors for malicious activity
+Inspector
+  A virtual agent that you run on EC2 instances that you can run tests against and recieve a report
+Macie
+  Scans S3 buckets searching for credentials that should not be revealed
+Certificate Manager
+  SSL certificates
+CloudHSM
+  Hardware Security Modules used to store keys
+Directory Services
+  Essentially a way of integrating your Microsoft ActiveDirectory services with AWS services
+WAF (Web Application Firewall)
+  Layer 7 Firewall Checks application layer for malicious active (e.g. XSS)
+Shield
+  DDOS mitigation
+Artifiact
+  Portal for On-demand access to AWS compliance reports
+
+Mobile Services (1)
+---------------------
+Mobile Hub
+  Sets up AWS services to connect mobile applications to AWS services
+PinPoint
+  Targeted push notification services
+AppSync
+  Automatically updates data in mobile applications in real time
+Device Farm
+  Test applications on real devices
+Mobile Analytics
+  Self explanatory
+
+Sumerian (AR/VR) (1)
+---------------------
+N/A
+
+Application Integration
+---------------------
+Step Functions
+  A way of managing Lambda functions (not applicable to course)
+Amazon MQ
+  For message queues
+SNS
+  Notification service
+SQS
+  A way of decoupling infrastructure
+SWF (Simple Workflow Service)
+  Amazon actually uses this for fulfilling orders and can involve humans
+
+Customer Engagement
+---------------------
+Connect
+  Contact Center as a service
+Simple Email Service
+  self-explanatory
+
+Business Productivity
+---------------------
+Alexa for Business
+  self-explanatory
+Chime
+  For video-conferencing (like Google Hangouts)
+Work Docs *
+  A way of safely and securing work-related documents (like to Dropbox)
+WorkMail
+  Like Gmail
+
+Desktop and App Streaming (1)
+---------------------
+Workspaces
+  BDI solution - run OS in cloud
+AppStream 2.0
+  Stream applications from cloud to device
+
+Internet of Things (IoT) (1)
+---------------------
+iOT
+iOT Device Management
+Amazon FreeRTOS
+  Operating system for microcontrollers
+Greengrass
+
+Game Development (1)
+---------------------
+GameLift
+
+
 * necessary for solutions architect associate certificate
 + will cover in Udemy course
+(1) Not relevant to exam
+
 
 =====================
 
