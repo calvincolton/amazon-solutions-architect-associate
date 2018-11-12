@@ -1,0 +1,40 @@
+Solutions Architect Associate Exam
+---------------------
+Compute
+Storage
+Databases
+Migration
+Networking and Content Delivery
+Management Tools
+Analytics
+Security and Identity & Compliance
+Application Integration
+Desktop & App Streaming
+
+(Greater breadth, less depth)
+
+Developer Associate Exam
+---------------------
+Compute
+Storage
+Databases
+Networking and Content Delivery
+Management Tools
+Analytics
+Security and Identity & Compliance
+Application Integration
+
+(Greater depth, though very similar to the architect associate certification, with just 1-2 hours more studying)
+
+System Administrator Associate Exam
+---------------------
+Compute
+Storage
+Databases
+Networking and Content Delivery
+Management Tools
+Analytics
+Security and Identity & Compliance
+Application Integration
+
+(The most difficult of associate exams, greatest depth)

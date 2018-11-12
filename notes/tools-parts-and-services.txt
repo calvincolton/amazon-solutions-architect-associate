@@ -222,7 +222,7 @@ Work Docs *
 WorkMail
   Like Gmail
 
-Desktop and App Streaming (1)
+Desktop and App Streaming
 ---------------------
 Workspaces
   BDI solution - run OS in cloud
