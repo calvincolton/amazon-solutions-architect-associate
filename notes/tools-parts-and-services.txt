@@ -79,6 +79,79 @@ X-Ray
 Cloud9
   An IDE (integrated development environment)
 
+Management Tools
+---------------------
+CloudWatch
+  A monitoring service
+CloudFormation *
+  A way of scripting infrastructure
+CloudTrail
+  Logs all AWS environment changes
+Config *
+  Monitors configuration of your entire AWS environment
+OpsWorks
+  A way of automating and configuring your environments
+Service Catalog
+Systems Manager
+  An interface for managing your AWS instances
+Trusted Advisor
+  Advice around multiple disciplines (e.g. security)
+  Trusted Advisor vs Inspector?
+Managed Services
+  Amazon manages your services for you
+
+Media Services
+---------------------
+Elastic Transcoder
+  Resizes video
+MediaConvert (new, won't be tested)
+MediaLive (new, won't be tested)
+MediaPackage (new, won't be tested)
+MediaStore (new, won't be tested)
+MediaTailor (new, won't be tested)
+
+Machine Learning
+---------------------
+SageMaker
+  Deep learning service for developers
+Comprehend
+  Sentiment analysis around database (do people like or dislike your product?)
+DeepLens
+  Artificially-aware camera
+  Physical hardware that you can buy
+Lex
+  What powers the Amazon Alexa service
+Machine Learning
+  Analyze data sets (less powerful than deep learning)
+Polly +
+  Takes text and turns it into speech (voices sound quite real)
+Rekognition
+  Video and image recognition (what's in the file/picture?)
+Amazon Translate
+  Like Google translate
+Amazon Transcribe
+  Brand new service that automatically recognizes speech and transcribes it into text
+
+Analytics
+---------------------
+Athena
+  Run sql queries in your S3 buckets
+EMR *
+  Used for processing large amounts of data
+CloudSearch
+ElasticSearch Service
+Kinesis *
+  A way of ingesting large amounts of data into AWS
+Kinesis Video Streams
+QuickSight
+  Amazon's business intelligence tool
+Data Pipeline *
+  Move data between AWS services
+Glue
+  ETL (extract, transform, load)
+
+* necessary for solutions architect associate certificate
++ will cover in Udemy course
 
 =====================
 
