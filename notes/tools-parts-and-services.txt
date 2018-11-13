@@ -2,108 +2,114 @@ Compute Services
 ---------------------
 EC2 (Elastic Cloud Computing)
 EC2 Containers
-  For Docker containers
+  - For Docker containers
 Elastic Beanstalk
-  For developers who basically don't understand AWS, and want to upload their code. Provides micro-services such as: load-balancers, auto-scaling groups, or EC2 instances
+  - For developers who basically don't understand AWS, and want to upload their code.
+  - Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring based on the code you upload to it.
 Lambda
-  Code uploaded to the cloud that is executed when an event handler is fired.
-  (take lots of notes on Labmda)
+  - Code uploaded to the cloud that is executed when an event handler is fired.
+  - (take thorough notes on Labmda)
 Lightsail
-  Amazon's VPS (virtual private services)
-  Provisions users with a server
+  - Amazon's VPS (virtual private services)
+  - Provisions users with a server
 Batch
-  For batch computing
+  - For batch computing
+Elastic Map Reduce
+  - This compute service is specifically designed to assist you in processing large data sets.
 
 Storage
 ---------------------
 S3 (Simple Storage Service)
-  Object-based storage
+  - Object-based storage
 EFS (Elastic File System)
-  Network attached storage
+  - Network attached storage
 Glacier
-  For data archival
+  - For (long-term) data archival
 Snowball
-  Provides a way to bring in large amounts of data into the AWS data center (think terrabytes on a disk)
+  - Provides a way to bring in large amounts of data into the AWS data center (think terrabytes on a disk)
 Storage Gateway
-  Virtual machines installed into your data center/head office that replicates information back to your S3
+  - Virtual machines installed into your data center/head office that replicates information back to your S3
 
 Database
 ---------------------
 RDS (Relational Database Service)
-  Like MySQL, PostgresQL
+  - Offers the following database engines: SQL, MySQL, MariaDB, PostgreSQL, Aurora, Oracle
 DynamoDB
-  Non-relational database (i.e. MongoDB)
+  - Non-relational database (i.e. MongoDB)
 Elasticache
-  A way of caching commonly queried things from your DB
+  - A way of caching commonly queried things from your DB
 Red Shift
-  Data warehousing or business intelligence for complex queries
+  - Data warehousing or business intelligence for complex queries
 
 Migration
 ---------------------
 AWS Migration Hub
-  A tracking service for migrations
+  - A tracking service for migrations
 Application Discovery Service
-  Detects applications and dependencies
+  - Detects applications and dependencies
 Database Migration Service
-  Service to migrate from On Premise to AWS
+  - Service to migrate from On Premise to AWS
 Server Migration Service
 Snowball (somewhere between migration and storage)
 
 Networking and Content delivery
 ---------------------
 VPC (Virtual Private Cloud)
-  A virtual data center
+  - A virtual data center
 Cloudfront
-  Amazon's content delivery network
+  - Amazon's content delivery network
 Route53
-  DNS Service (IPv4 and IPv6 address)
+  - DNS Service (IPv4 and IPv6 address)
 API Gateway
-  Create APIs, more to come
+  - Create APIs, more to come
 Direct Connect
-  Run a dedicated line from your data center to Amazon
+  - Run a dedicated line from your data center to Amazon
 
 Developer Tools
 ---------------------
 CodeStar
-  Project management for code with continuous delivery toolchain
+  - Project management for code with continuous delivery toolchain
 CodeCommit
-  Place to store your code, source control service for git repositories
+  - Place to store your code, source control service for git repositories
 CodeBuild
-  For compiling code
+  - For compiling code
 CodeDeploy
-  Automates deployments to your EC2 instances
+  - Automates deployments to your EC2 instances
 CodePipeline
-  Continous delivery service
+  - Continous delivery service
 X-Ray
-  For debugging
+  - For debugging
 Cloud9
-  An IDE (integrated development environment)
+  - An IDE (integrated development environment)
 
 Management Tools
 ---------------------
 CloudWatch
-  A monitoring service
+  - A monitoring service
 CloudFormation *
-  A way of scripting infrastructure
+  - A way of scripting infrastructure
+  - CloudFormation
 CloudTrail
-  Logs all AWS environment changes
+  - Logs all AWS environment changes
+  - Can supply auditors with detailed logs of individual users that provision specific requests on AWS platform
 Config *
-  Monitors configuration of your entire AWS environment
+  - Monitors configuration of your entire AWS environment
 OpsWorks
-  A way of automating and configuring your environments
+  - A way of automating and configuring your environments
+  - Can enable your system administrators to configure and operate your web applications
 Service Catalog
 Systems Manager
-  An interface for managing your AWS instances
+  - An interface for managing your AWS instances
 Trusted Advisor
-  Advice around multiple disciplines (e.g. security)
-  Trusted Advisor vs Inspector?
+  - Advice around multiple disciplines (e.g. security)
+  - Trusted Advisor vs Inspector?
 Managed Services
-  Amazon manages your services for you
+  - Amazon manages your services for you
 
 Media Services
 ---------------------
 Elastic Transcoder
-  Resizes video
+  - Resizes video
 MediaConvert (new, won't be tested)
 MediaLive (new, won't be tested)
 MediaPackage (new, won't be tested)
@@ -113,79 +119,79 @@ MediaTailor (new, won't be tested)
 Machine Learning
 ---------------------
 SageMaker
-  Deep learning service for developers
+  - Deep learning service for developers
 Comprehend
   Sentiment analysis around database (do people like or dislike your product?)
 DeepLens
-  Artificially-aware camera
-  Physical hardware that you can buy
+  - Artificially-aware camera
+  - Physical hardware that you can buy
 Lex
-  What powers the Amazon Alexa service
+  - What powers the Amazon Alexa service
 Machine Learning
-  Analyze data sets (less powerful than deep learning)
+  - Analyze data sets (less powerful than deep learning)
 Polly +
-  Takes text and turns it into speech (voices sound quite real)
+  - Takes text and turns it into speech (voices sound quite real)
 Rekognition
-  Video and image recognition (what's in the file/picture?)
+  - Video and image recognition (what's in the file/picture?)
 Amazon Translate
-  Like Google translate
+  - Like Google translate
 Amazon Transcribe
-  Brand new service that automatically recognizes speech and transcribes it into text
+  - Brand new service that automatically recognizes speech and transcribes it into text
 
 Analytics
 ---------------------
 Athena
-  Run sql queries in your S3 buckets
+  - Run sql queries in your S3 buckets
 EMR *
-  Used for processing large amounts of data
+  - Used for processing large amounts of data
 CloudSearch
 ElasticSearch Service
 Kinesis *
-  A way of ingesting large amounts of data into AWS
+  - A way of ingesting/collating large amounts of data, streamed from multiple sources, into AWS
 Kinesis Video Streams
 QuickSight
-  Amazon's business intelligence tool
+  - Amazon's business intelligence tool
 Data Pipeline *
-  Move data between AWS services
+  - Move data between AWS services
 Glue
-  ETL (extract, transform, load)
+  - ETL (extract, transform, load)
 
 Security and Identity Compliance
 ---------------------
 IAM
 Cognito
-  Device Authentication Service
+  - Device Authentication Service
 GuardDuty
-  Service that monitors for malicious activity
+  - Service that monitors for malicious activity
 Inspector
-  A virtual agent that you run on EC2 instances that you can run tests against and recieve a report
+  - A virtual agent that you run on EC2 instances that you can run tests against and recieve a report
 Macie
-  Scans S3 buckets searching for credentials that should not be revealed
+  - Scans S3 buckets searching for credentials that should not be revealed
 Certificate Manager
-  SSL certificates
+  - SSL certificates
 CloudHSM
-  Hardware Security Modules used to store keys
+  - Hardware Security Modules used to store keys
 Directory Services
-  Essentially a way of integrating your Microsoft ActiveDirectory services with AWS services
+  - Essentially a way of integrating your Microsoft ActiveDirectory services with AWS services
 WAF (Web Application Firewall)
-  Layer 7 Firewall Checks application layer for malicious active (e.g. XSS)
+  - Layer 7 Firewall Checks application layer for malicious active (e.g. XSS)
 Shield
-  DDOS mitigation
+  - DDOS mitigation
 Artifiact
-  Portal for On-demand access to AWS compliance reports
+  - Portal for On-demand access to AWS compliance reports
 
 Mobile Services (1)
 ---------------------
 Mobile Hub
-  Sets up AWS services to connect mobile applications to AWS services
+  - Sets up AWS services to connect mobile applications to AWS services
 PinPoint
-  Targeted push notification services
+  - Targeted push notification services
 AppSync
-  Automatically updates data in mobile applications in real time
+  - Automatically updates data in mobile applications in real time
 Device Farm
-  Test applications on real devices
+  - Test applications on real devices
 Mobile Analytics
-  Self explanatory
+  - Self explanatory
 
 Sumerian (AR/VR) (1)
 ---------------------
@@ -194,47 +200,47 @@ N/A
 Application Integration
 ---------------------
 Step Functions
-  A way of managing Lambda functions (not applicable to course)
+  - A way of managing Lambda functions (not applicable to course)
 Amazon MQ
-  For message queues
+  - For message queues
 SNS
-  Notification service
+  - Notification service
 SQS
-  A way of decoupling infrastructure
+  - A way of decoupling infrastructure
 SWF (Simple Workflow Service)
-  Amazon actually uses this for fulfilling orders and can involve humans
+  - Amazon actually uses this for fulfilling orders and can involve humans
 
 Customer Engagement
 ---------------------
 Connect
-  Contact Center as a service
+  - Contact Center as a service
 Simple Email Service
-  self-explanatory
+  - self-explanatory
 
 Business Productivity
 ---------------------
 Alexa for Business
-  self-explanatory
+  - self-explanatory
 Chime
-  For video-conferencing (like Google Hangouts)
+  - For video-conferencing (like Google Hangouts)
 Work Docs *
-  A way of safely and securing work-related documents (like to Dropbox)
+  - A way of safely and securing work-related documents (like to Dropbox)
 WorkMail
-  Like Gmail
+  - Like Gmail
 
 Desktop and App Streaming
 ---------------------
 Workspaces
-  BDI solution - run OS in cloud
+  - BDI solution - run OS in cloud
 AppStream 2.0
-  Stream applications from cloud to device
+  - Stream applications from cloud to device
 
 Internet of Things (IoT) (1)
 ---------------------
 iOT
 iOT Device Management
 Amazon FreeRTOS
-  Operating system for microcontrollers
+  - Operating system for microcontrollers
 Greengrass
 
 Game Development (1)

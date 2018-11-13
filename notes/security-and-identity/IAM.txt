@@ -1,0 +1,29 @@
+- IAM allows you to manage users and their level of access to the AWS Console.
+
+- It is important to understand IAM and how it works, both for the exam and for administering a company's AWS account in real life.
+
+What does IAM give you?
+  - Centralised control of your AWS account
+  - Shared Access to your AWS account
+  - Granular Permissions
+  - Identity Federation (including Active Directory, Facebook, LinkedIn, etc.)
+  - Multifactor Authentication
+  - Provide temporary access to users/devices and services where necessary
+  - Allows you to set up your own password rotation policy
+  - Integrates with many different AWS services
+  - Supports PCI DSS Compliance
+
+Critical Terms
+  - Users: end users (think people)
+  - Groups: a collection of users under one set of permissions
+  - Roles: you create roles and can then assign them to AWS resources
+  - Policies: a document that defines one or more permissions. Policies are attached to users, groups, or roles.
+
+Notes:
+  - IAM is universal--it does not apply to regions.
+  - The "root account" is the account created when you setup your AWS account. It has complete Admin access.
+  - New Users have NO permissions when first created.
+  - New Users are assigned an Access Key Id and a Secret Access Key to log in to the console. You can use this to access AWS via the APIs and Command Line. Do not confuse this with a user name and password, which an be used in the AWS console.
+  - You only get to view the Access Key and Secrete Access Key credentials once.
+  - You should always setup Multifactor Authentication on your account.
+  - You can create and customize your own password rotation policies.
