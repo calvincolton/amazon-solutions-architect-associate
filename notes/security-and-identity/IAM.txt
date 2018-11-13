@@ -1,5 +1,5 @@
-- IAM allows you to manage users and their level of access to the AWS Console.
-
+IAM provides centralized control of your AWS account.
+- It allows you to manage users and their level of access to the AWS Console.
 - It is important to understand IAM and how it works, both for the exam and for administering a company's AWS account in real life.
 
 What does IAM give you?
@@ -19,7 +19,7 @@ Critical Terms
   - Roles: you create roles and can then assign them to AWS resources
   - Policies: a document that defines one or more permissions. Policies are attached to users, groups, or roles.
 
-Notes:
+Notes
   - IAM is universal--it does not apply to regions.
   - The "root account" is the account created when you setup your AWS account. It has complete Admin access.
   - New Users have NO permissions when first created.
@@ -27,3 +27,10 @@ Notes:
   - You only get to view the Access Key and Secrete Access Key credentials once.
   - You should always setup Multifactor Authentication on your account.
   - You can create and customize your own password rotation policies.
+  - IAM integrates with existing active directory account allowing single sign-on (SSO).
+  - The "root" account has administrator access
+  - When you create a new user in the IAM console, they will have no access to all AWS services.
+  - Policy documents are written in JSON
+
+Quiz Q: Power User Access allows _____?
+Quiz A: Access to all AWS services except for management of groups and users within IAM.

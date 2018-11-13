@@ -1,0 +1,30 @@
+Simple Storage Service (S3)
+  - S3 provides developers and IT teams with secure, durable, highly-scalable object storage.
+  - In essence, it allows you to upload files.
+  - Amazon S3 is easy to use, with a simple web services interface to store and retrieve any amount of data from anywhere on the web.
+
+Critical Terms
+- N/A
+
+Notes
+  - S3 IS object-based storage. It is a simply key-value store
+    - The key is simply the name of the object
+    - The value is simply the data and is made up of a sequence of bytes
+    - The Version ID (covered later)
+    - The Metadata is data about what you are storing
+  - Subresources
+    - Access Control Lists
+    - Torrent (beyond scope of this course and will not be covered)
+  - The data is spread across multiple devices and facilities.
+  - Files are stored in Buckets (like a folder in the cloud, but with a universal name-space, generating a DNS).
+  - URLs for buckets have the following structure:
+    https://s3-eu-west-1.amazonaws.com/acloudguru or...
+    https://s3-region.amazonaws.com/bucket-name
+  - When you upload a file to S3, you will receive a HTTP 200 code if uploaded successfully
+
+Data Consistency Model for S3
+  - Read after Write consistency for PUTS of new Objects
+  - Eventual consistency for overwrite PUTS and DELETE (can take some time to propogate)
+
+Quiz Q:
+Quiz A:
