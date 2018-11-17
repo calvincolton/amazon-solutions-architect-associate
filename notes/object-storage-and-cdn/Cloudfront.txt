@@ -1,0 +1,29 @@
+CloudFront
+
+Exam Tips
+  - SEE Critical Terms - Edge Location, Origin, and Distribution
+  - Edge locations are not for READ only, you can write them too. That object will then be replicated to the origin server.
+  - Objects are cached for the life of the TTL (Time To Live)
+  - You can clear cached objects, but will be charged.
+
+Critical Terms
+  - CDN: a content delivery network (CDN) is a system of distributed servers (network) that delivers web pages and other web content to a user based on the geographic locations of the user, the origin of the webpage and a content delivery server.
+  - Edge Location: this is the location where content will be cached. This is separate to an AWS Region/AZ.
+  - Origin: This is the origin of all the files that the CDN will distribute. This can be either an S3 Bucket, an EC2 instance, an Elastic Load Balancer or Route 53.
+  - Distribution: This is the name given to the CDN which consists of a collection of Edge Locations.
+    - Web Distribution (CDN) - typically used for websites
+    - RTMP (CDN) - used for media streaming
+
+Basics
+
+
+Notes
+  - Amazon CloudFront is optimized to work with other Amazon Web Services, like S3, Elastic Compute Cloud, EC2, Elastic Load Balancing, and Route 53.
+  - CloudFront also works seamlessly with any non-AWS origin server, which stores the original, definitive versions of your files.
+
+Charges
+
+
+
+Quiz Q:
+Quiz A:
