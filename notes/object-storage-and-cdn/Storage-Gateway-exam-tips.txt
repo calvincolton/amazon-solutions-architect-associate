@@ -1,0 +1,7 @@
+- File Gateway
+  - For flat files, stored directly on S3
+  - Volume Gateway
+    - Stored Volumes (entire dataset is stored on-site and backed up asynchronously to S3)
+    - Cached Volumes (entire dataset is stored on S3, and the most frequently accessed data is cached on-site)
+  - Gateway Virtual Tape Library (VTL)
+    - Used for backup and uses popular backup applications like Netbackup, Backup Exec, Veeam, etc.

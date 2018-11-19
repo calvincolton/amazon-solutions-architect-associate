@@ -1,0 +1,11 @@
+- Edge Location
+  - This is the location where content will be cached (separate to an AWS Region/AZ)
+  - Not just READ only, you can write to them as well (i.e. put an object in them)
+  - Objects are cached for the life of the TTL (Time To Live)
+  - You can clear cached objects, but you will be charged
+- Origin
+  - This is the origin of all the files that the CDN will distribute. This can be either an S3 bucket, an EC2 instance, an Elastic Load Balancer, or Route 53
+- Distribution
+  - This is the name given the CDN which consists of a collection of Edge Locations
+  - Web Distribution (typically for websites)
+  - RTMP (typically for media streaming)

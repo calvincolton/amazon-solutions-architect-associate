@@ -1,0 +1,3 @@
+Static Websites hosted on S3 have the following URL format:
+http://${bucket-name}.s3-website-${region}.amazonaws.com
+http://test-static-website-delete.s3-website-us-west-1.amazonaws.com

@@ -1,0 +1,60 @@
+Exam Tips
+- S3 is object based storage (not for OS or DB, which requires block-based storage)
+- Files can be anywhere from 0 bytes to 5 TB
+- There is unlimited storage
+- Files are stored in buckets
+- S3 is a universal namespace, names must be unique globally, all lowercase
+- https://s3-us-west-1.amazonaws.com/my-bucket-name
+- Read after Write consistency for PUTS of new objects
+- Eventual consistency for overwrite PUTS and DELETES (takes time to propagate)
+- By default, all newly created buckets are PRIVATE
+- You can set up access control to your buckets using
+  - Bucket Policies
+  - Access Control Lists
+- S3 Buckets can be configured to create access logs
+- Storage Tiers/Classes
+  - S3 Standard
+  - S3-IA (Infrequently Accessed)
+  - S3 One Zone - IA
+  - Glacier (data archival)
+- Core Fundamentals of S3
+  - Key
+  - Value
+  - Version ID
+  - Metadata
+  - Objet based storage only (for files)
+  - Not suitable for OS or DB
+- Versioning
+  - Stores all versions of an object (including writes and even if you delete an object)
+  - Great backup tool
+  - Once enabled, versioning cannot be disabled, only suspended
+  - Integrates with lifecycle rules
+  - Cross Region Replication requires versioning enabled on the source bucket
+- Lifecycle Management
+  - Can be used in conjunction with versioning, or completely independent
+  - Can be applied to current and previous versions
+  - Following actions can now be done:
+    - Transition to the Standard - Infrequent Access Storage Class (30 days after creation date)
+    - Archive to the Glacier Storage Class (30 days after IA)
+    - Permanently Delete
+- Encryption
+  - In Transit:
+    - SSL/TLS
+  - At Rest (4 total - three server-side, one client-side):
+    - Server Side Encryption
+      - S3 Managed Keys - SSE-S3
+      - AWS Key Management Service, Managed Keys - SSE-KMS
+      - Server side encryption with Customer Provided Keys - SSE-C
+    - Client Side encryption
+- S3 Transfer Acceleration
+  - Can speed up transfers to S3 using S3 transfer acceleration.
+  - This costs extra and has the greatest impact on people who are in a far away location
+- S3 Static Websites
+  - You can use S3 to host static websites
+  - Serverless
+  - Very cheap, scales automatically
+  - STATIC only, cannot host dynamic sites
+- Final Tips
+  - You write to S3, HTTP 200 code for a successful write
+  - You can load files to S3 much faster by enabling multipart upload
+  - Read the S3 FAQ before taking the exam. It comes up a lot

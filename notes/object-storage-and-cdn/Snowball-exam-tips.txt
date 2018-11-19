@@ -1,0 +1,8 @@
+- Types
+  - Snowball
+  - Snowball Edge
+  - Snowmobile
+- Understand what Snowball is
+- Understand what Import/Export is
+  - Import to S3
+  - Export to S3
