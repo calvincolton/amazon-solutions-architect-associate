@@ -58,3 +58,42 @@ Exam Tips
   - You write to S3, HTTP 200 code for a successful write
   - You can load files to S3 much faster by enabling multipart upload
   - Read the S3 FAQ before taking the exam. It comes up a lot
+- If a user sees the following
+
+Quiz questiosn
+---------------------
+Quiz Q: What is Storage Gateway?
+Quiz A: Storage Gateway is an on-premise virtual appliance that can be used to cache S3 locally at a customer's site
+
+Quiz Q: One of your users is trying to upload a 7.5GB file to S3 however they keep getting the following error message - "Your proposed upload exceeds the maximum allowed object size.". What is a possible solution for this?
+Quiz A: Design your application to use the multi-part upload API for all objects.
+
+Quiz Q: What does RRS stand for when talking about S3?
+Quiz A: Reduced Redundancy Storage
+
+Quiz Q: What is the availability on RRS?
+Quiz A: 99.99%
+
+Quiz Q: What is the durability on RRS?
+Quiz A: 99.99%
+
+Quiz Q: What is the durability on S3?
+Quiz A: 99.999999999 (11 9s)
+
+Quiz Q: What is the availability on S3?
+Quiz A: 99.99%
+
+Quiz Q: S3 has eventual consistency for which HTTP Methods?
+Quiz A: overwrite PUTS and DELETES
+
+Quiz Q: You run a meme creation website that frequently generates meme images. The original images are stored in S3 and the meta data about the memes are stored in DynamoDB. You need to store the memes themselves in a low cost storage solution. If an object is lost, you have created a Lambda function that will automatically recreate this meme using the original file in S3 and the metadata in Dynamodb. Which storage solution should you consider to store this non-critical, easily reproducible data on in the most cost effective solution as possible?
+Quiz A: S3-RRS
+
+Quiz Q: You run a popular photo sharing website that is based off S3. You generate revenue from your website via paid for adverts, however you have discovered that other websites are linking directly to the images on your site, and not to the HTML pages that serve the content. This means that people are not seeing your adverts and every time a request is made to S3 to serve an image it is costing your business money. How could you resolve this issue?
+Quiz A: Remove the ability for images to be served publicly to the site and then use signed URL's with expirary dates
+
+Quiz Q:
+Quiz A:
+
+Quiz Q:
+Quiz A:

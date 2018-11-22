@@ -1,3 +1,4 @@
+Storage Gateway is an on-premise virtual appliance that can be used to cache S3 locally at a customer's site
 - File Gateway
   - For flat files, stored directly on S3
   - Volume Gateway
