@@ -52,3 +52,4 @@ Post-lab Exam Tips
 - On an EBS-backed instance, the default action is the root EBS volume to be deleted when the instance is terminated
 - EBS root volumes of your default AMI's cannot be encrypted.
   - You can also use a third party tool (such as bit locker, etc) to encrypt the root volume, or this can be done when creating AMIs in the AWS console or using the API
+  - Additional volumes can be encrypted

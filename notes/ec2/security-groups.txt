@@ -1,0 +1,14 @@
+Notes
+- A security group is a virtual firewall that controls access to your EC2 instances.
+- When applying or changing rules of a security group, changes are instantaneous.
+- Security Groups are stateful (when adding inbound rules, outbound rules are added automatically)
+- You can not add rules that block traffic, only add rules that enable inbound traffic.
+- All inbound traffic is blocked by default
+- All outbound traffic is allowed by default
+- Changes to security groups take effect immediately
+- You can have any number of EC2 instances within a security group
+- You can have multiple security groups attached to EC2 instances
+- Security groups are STATEFUL
+  - If you create an inbound rule allowing traffic in, that traffic is automatically allowed back out again
+- You cannot block specific IP addresses using Security Groups, instead use Network Access Control Lists
+- You can specify allow rules, but not deny rules

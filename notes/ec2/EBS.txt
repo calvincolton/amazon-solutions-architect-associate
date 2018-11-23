@@ -22,4 +22,22 @@ Elastic Block Storage
   - Magnetic (Standard)
     - Lowest cost per gigabyte of all EBS volume types that is bootable.
     - Magnetic volumes are ideal for workloads where data is accessed infrequently, and applications where the lowest storage cost is important.
-    
+
+- EBS Volumes and EC2 instances must be in the same Availability Zone
+- In order to move an EBS volume from one Availability Zone to another, you must make a snapshot first
+
+Volumes and Snapshots Exam Tips:
+- A Volume is a hard disk
+- The root device volume is where the operating system is installed
+- Snapshots exist on S3
+- Snapshots are a point-in-time copy of a Volume
+- Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3
+- To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot (however you can take a snap while the instance is running)
+- You can create AMIs from EBS-backed instances and Snapshots
+- You can change EBS volume sizes on the fly, including changing the size and storage type
+- Volumes will always be in the same Availability Zone as the EC2 instance
+- To move an EC2 volume from on AZ/Region to another, take a snap or an image of it, then copy it to the new AZ/Region
+- Snapshots of encrypted volumes are encrypted automatically
+- Volumes restored from encrypted snapshots are encrypted automatically
+- You can share snapshots with other people, but only if they are unencrypted
+  - These snapshots can be shared with other AWS accounts or made public

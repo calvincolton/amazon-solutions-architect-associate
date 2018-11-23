@@ -1,0 +1,16 @@
+RAID = Redundant Array of Independent Disks
+  - RAID 0 (common in gaming)
+    - Striped, no redundancy, good performance
+  - RAID 1
+    - Mirrored, redundancy
+  - RAID 5
+    - Good for reads, bad for writes
+    - AWS does not recommend ever putting RAID 5's on EBS
+  - RAID 10
+    - Striped, and mirrored, good redundancy, good performance
+    - A combination of RAID 1 and RAID 0
+- To take a snapshot of a RAID array
+  1) Freeze the file system
+  2) Unmount the RAID array
+  3) Shutting down the associated EC2 instance
+  
