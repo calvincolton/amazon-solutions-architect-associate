@@ -1,0 +1,31 @@
+What is a load balancer?
+- A virtual machine that balances the load of your web application (http/https traffic) across web servers.
+
+3 Types of Load Balancers
+- Application Load Balancer
+  - Best suited for load balancing HTTP and HTTPS traffic
+  - Operate at Layer 7 (application layer) and are application-aware
+  - Intelligent and you can create advanced request routing, sending specified requests to specific web servers
+- Network Load Balancer
+  - Best suited for load balancing TCP traffic where extreme performance is required
+  - Operating at the Layer 4 (connection layer), these are capable of handling millions of requests per second, while maintaining ultra-low latencies
+  - Use for extreme performance!
+- Classic Load Balancer
+  - Legacy Elastic Load Balancer
+  - You can load balance HTTP/HTTPS applications and use Layer 7-specific features such as X-forwarded-for and sticky sessions
+  - You can also use Layer 4 load balancing for applications that rely purely on the TCP protocol
+
+Load Balancer Errors
+- 504: Gateway has timed out. Your application stops responding. This can be at the Web Server layer or the Database layer
+
+X-Forwared-For header
+  - this passes on the public IP address to your EC2 instance
+
+Exam Tips
+  - Remember the 3 types of load balancers, and that the classic load balancer is the legacy load balancer
+  - Instances monitored by ELB are reported as:
+    - InService
+    - OutofService
+  - Health Checks check the instance health by talking to it
+  - Have their own DNS name, you are never given an IP address
+  - Read the ELB FAQ for Classic Load Balancers
