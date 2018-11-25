@@ -1,0 +1,28 @@
+What metrics are available by default for your EC2 instance?
+- CPU related
+  - credit balance and usage
+  - CPU utilization
+- Disk related
+  - Read bytes, Write bytes, read ops, write ops
+- Network related
+  - Network in-and-out
+- Status check
+  - Testing both at an instance level and a host level
+
+- Events help you respond to state changes in your AWS resources
+  - e.g. automatically invoke a lambda function
+
+- Logs
+  - Log events in the application layer
+
+Standard Monitoring = 5 minutes
+Detailed Monitoring = 1 minute
+
+What can you do with CloudWatch?
+- Dashboards
+- Alarams
+- Events
+- Logs
+
+CloudWatch vs CloudTrail
+- CloudWatch is for monitoring, CloudTrail is for auditing
