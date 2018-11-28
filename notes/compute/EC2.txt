@@ -47,6 +47,11 @@ EC2 Instance Types
   - P for graphics (think Pics)
   - X for eXtreme memory
 
+View EC2 instance metadata:
+#elevate yourself to root user
+$ sudo su
+$ curl http://169.254.169.254/latest/meta-data/
+
 Post-lab Exam Tips
 - Termination Protection is turned off by default, you must turn it on
 - On an EBS-backed instance, the default action is the root EBS volume to be deleted when the instance is terminated

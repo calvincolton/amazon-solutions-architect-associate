@@ -1,0 +1,70 @@
+What is Lambda?
+
+Labmda incapsulates:
+- Data Center
+- Hardware
+- Assembly Code/Protocols
+- High-level languages
+- Operating Systems
+- Applicaiton Layer/AWS APIs
+- AWS Lambda
+
+- AWS Lambda is a compute service where you can upload your code and create a Lambda function.
+- Lambda takes care of provisioning and managing servers that you use to run the code.
+- You don't have to worry about operating systems, patching, scaling, etc.
+- You can use Lambda in the following ways:
+  - As an event-driven compute service where AWS Lambda runs your code in response to events. These events could be changes to data in data in an Amazon S3 bucket or an Amazon DynamoDB table.
+  - As a compute service to run your code in response to HTTP requests using Amazon API Gateway or API calls made using AWS SDKs.
+- Lambda scales automatically (scales out)
+
+Note: Scales up vs scales out
+- Scales up indicates scaling up in terms of processing power or storage capacity
+- Scales out indicates automatic provisioning of services (e.g. adding new EC2 instances)
+
+What languages are supported by Lambda?
+- Node.js
+- Java
+- Python
+- C#
+
+Different types of Lambda triggers:
+- API Gateway
+- ALexa Skills Kit
+- CloudWatch Events
+- CloudWatch Logs
+- CodeCommit
+- DynamoDB
+- Kinesis
+- S3
+- SNS
+- SQS
+
+Pricing
+- Number of requests:
+  - First 1 million requests are free.
+  - $0.20 per 1 million requests thereafter
+- Duration:
+  - Duration is calculated from the time your code begins executing until it returns or otherwise terminates, rounded up to the nearest 100ms.
+  - The price depends on the amount of memory you allocate to your function.
+  - You are charged $0.00001667 for every GB-second used.
+
+Why is Lambda cool?
+- Serverless!
+- Continuous scaling!
+- Super cheap!
+
+Exam Tips:
+- Remember Lambda run times:
+  - Nodejs
+  - Python
+  - Go
+  - Java
+  - Net
+- Remember Lambda triggers:
+  - See above
+- Lambda scales out
+- Lambda functions are independent
+- Lambda is serverless
+  - Know what services are serverless
+- Lambda functions can trigger other lambda functions, and so on
+- Lambda can do things globally
